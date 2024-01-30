@@ -1,0 +1,9 @@
+Carousel img {
+    height: 100px;
+}
+
+.carousel-caption h1,
+.carousel-caption p,
+.carousel-caption a {
+  color: #232121; /* Cambia "#ff0000" al color que desees usando código hexadecimal, RGB u otro formato de color */
+}
