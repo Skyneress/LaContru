@@ -1,3 +1,4 @@
+<!-- Navbar -->
 <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">La Contru</a>
@@ -35,82 +36,93 @@
 <!--  texto de inicio -->
 
 <div class="container py-4">
-    
-    <div class="p-5 mb-4 bg-body-tertiary rounded-3">
-      <div class="container-fluid py-5">
-        <h1 class="display-5 fw-bold">Encuentra lo que buscas con nosotros</h1>
-        <p class="col-md-8 fs-4"></p>
-        <button class="btn btn-primary btn-lg" type="button">Contáctanos</button>
-      </div>
-    </div>
 
-    <div class="row align-items-md-stretch">
-      <div class="col-md-6">
-        <div class="h-100 p-5 text-bg-dark rounded-3">
-          <h2>Compra con nosotros</h2>
-          <p>Encuentra los productos de la más alta calidad con nosotros</p>
-          <button class="btn btn-outline-light" type="button">Example button</button>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-          <h2>Envíos a domicilio</h2>
-          <p>Llevamos nuestros productos a tu hogar sin que tengas que moverte</p>
-          <button class="btn btn-outline-secondary" type="button">Example button</button>
-        </div>
-      </div>
+  <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+    <div class="container-fluid py-5">
+      <h1 class="display-5 fw-bold">Encuentra lo que buscas con nosotros</h1>
+      <p class="col-md-8 fs-4"></p>
+      <button class="btn btn-primary btn-lg" type="button">Contáctanos</button>
     </div>
-
   </div>
+
+  <div class="row align-items-md-stretch">
+    <div class="col-md-6">
+      <div class="h-100 p-5 text-bg-dark rounded-3">
+        <h2>Compra con nosotros</h2>
+        <p>Encuentra los productos de la más alta calidad con nosotros</p>
+        <!-- Agregué el ícono de bolsa de compras -->
+        <button class="btn btn-outline-light" type="button">Compra aquí <i class="bi bi-bag"></i></button>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+        <h2>Envíos a domicilio</h2>
+        <p>Llevamos nuestros productos a tu hogar sin que tengas que moverte</p>
+        <!-- Agregué el ícono de camión -->
+        <button class="btn btn-outline-secondary" type="button">Delivery <i class="bi bi-truck"></i></button>
+      </div>
+    </div>
+  </div>
+
+</div>
 
   <!-- Carousel -->
 
-  <div id="myCarousel" class="carousel slide mb-6 mt-5" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <div class="container">
+
+    <div id="myCarousel" class="carousel slide mb-6 mt-5" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+         <!--  <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
+         <img src="assets/img/TiradorMadrid.jpg" width="350px" height="350px" alt="">
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Tirador Madrid 128</h1>
+              <p class="opacity-75">Por embalajes</p>
+              <p><a class="btn btn-lg btn-secondary" href="#">Valor $166.000</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
+          <img src="assets/img/Cubierta de acero inoxidable.jpg" width="350px" height="350px" alt="">
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Cubierta de acero inoxidable</h1>
+              <p>diferentes medidas: 80-100-120-150-180
+                secado izquierdo y secado derecho
+              </p>
+              <p><a class="btn btn-lg btn-secondary" href="#">Valor $9.990</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
+          <img src="assets/img/Corredera telescópica.webp" width="350px" height="350px" alt="">
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Correderera Telescópica</h1>
+              <p>Rieles corredera telescópica 42cm estándar</p>
+              <p><a class="btn btn-lg btn-secondary" href="#">Valor de 300 $26.000</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <h1>Example headline.</h1>
-            <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+
   </div>
 
 
@@ -122,11 +134,12 @@
 
     <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
-          <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+          <h2 class="featurette-heading fw-normal lh-1">Tacapanto Alto Brillo Blanco <span class="text-body-secondary"></span>Valor $75.000 por caja </h2>
+          <p class="lead">Caja de 10 rollos de 100 metros</p>
         </div>
         <div class="col-md-5">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+          <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> -->
+          <img src="assets/img/Cinta.png" width="350" height="350">
         </div>
       </div>
     
@@ -134,11 +147,12 @@
     
       <div class="row featurette">
         <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
-          <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+          <h2 class="featurette-heading fw-normal lh-1">Melamina Blanca <span class="text-body-secondary">Plancha $19.500</span></h2>
+          <p class="lead">Venta de quincallería</p>
         </div>
         <div class="col-md-5 order-md-1">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+          <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> -->
+          <img src="assets/img/MelaminaBlanca.png" width="350px" height="350px" alt="">
         </div>
       </div>
     
@@ -146,11 +160,12 @@
     
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
-          <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+          <h2 class="featurette-heading fw-normal lh-1">Bisagras 35mm-26mm <span class="text-body-secondary">$999</span></h2>
+          <p class="lead">Bisagras marcas Ducasse</p>
         </div>
         <div class="col-md-5">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+          <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> -->
+          <img src="assets/img/Visagra.png" width="350" height="350">
         </div>
       </div>
 
@@ -169,12 +184,13 @@
       <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
         <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
       </a>
-      <span class="mb-3 mb-md-0 text-body-secondary">Nombre de la Tienda</span>
+      <span class="mb-3 mb-md-0 text-body-secondary ms-2">Nombre de la Tienda</span> <!-- Agregué un margen a la izquierda (ms-2) -->
     </div>
 
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-      <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-whatsapp"></i></a></li>
-      <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-envelope-at-fill"></i></a></li>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex flex-column"> <!-- Clase flex-column para los elementos de la lista -->
+      <li class="mb-2"><a class="text-body-secondary" href="#">Contáctanos en Whatsapp<i class="bi bi-whatsapp ms-2"></i></a></li> <!-- Agregué un margen a la izquierda (ms-2) -->
+      <li class="mb-2"><a class="text-body-secondary" href="#">Envíanos un correo<i class="bi bi-envelope-at-fill ms-2"></i></a></li> <!-- Agregué un margen a la izquierda (ms-2) -->
+      <li class="mb-2"><a class="text-body-secondary" href="#">Encuéntranos en<i class="bi bi-geo-alt ms-2"></i></a></li> <!-- Agregué un margen a la izquierda (ms-2) -->
       <!-- <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li> -->
     </ul>
   </footer>

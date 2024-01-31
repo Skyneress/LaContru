@@ -5,5 +5,18 @@ Carousel img {
 .carousel-caption h1,
 .carousel-caption p,
 .carousel-caption a {
-  color: #232121; /* Cambia "#ff0000" al color que desees usando código hexadecimal, RGB u otro formato de color */
+  color: #232121; 
+}
+
+footer {
+  background-color: #778899; 
+  color: #ffffff; 
+  padding: 10px; 
+  text-align: center; 
+}
+
+#myCarousel {
+
+  background-color: #696969;
+
 }
