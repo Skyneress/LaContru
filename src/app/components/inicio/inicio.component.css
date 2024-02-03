@@ -1,6 +1,6 @@
-Carousel img {
+/* Carousel img {
     height: 100px;
-}
+} */
 
 .carousel-caption h1,
 .carousel-caption p,
@@ -19,4 +19,10 @@ footer {
 
   background-color: #696969;
 
+}
+
+.carousel-inner img {
+  object-fit: cover;
+  width: 350px;
+  height: 350px;
 }
