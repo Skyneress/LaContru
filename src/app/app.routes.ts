@@ -2,6 +2,9 @@ import { Routes } from '@angular/router';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { ProductosComponent } from './components/productos/productos.component';
 import { ContactosComponent } from './components/contactos/contactos.component';
+import { BisagrasComponent } from './Component/bisagras/bisagras.component';
+import { TiradoresYperillasComponent } from './Component/tiradores-yperillas/tiradores-yperillas.component';
+import { CorrederasComponent } from './Component/correderas/correderas.component';
 
 export const routes: Routes = [
     {
@@ -27,5 +30,23 @@ export const routes: Routes = [
         path: 'Contactos',
         title: 'Contactos',
         component: ContactosComponent
+    },
+
+    {
+        path:'Bisagras',
+        title:'Bisagras',
+        component: BisagrasComponent
+    },
+
+    {
+        path:'Tiradores y Perillas',
+        title:'Tiradores-y-perillas',
+        component: TiradoresYperillasComponent
+    },
+
+    {
+        path:'Correderas',
+        title:'Correderas',
+        component: CorrederasComponent
     }
 ];
