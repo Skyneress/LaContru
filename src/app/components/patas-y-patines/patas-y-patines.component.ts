@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-correderas',
+  selector: 'app-patas-y-patines',
   standalone: true,
   imports: [],
-  templateUrl: './correderas.component.html',
-  styleUrl: './correderas.component.css'
+  templateUrl: './patas-y-patines.component.html',
+  styleUrl: './patas-y-patines.component.css'
 })
-export class CorrederasComponent {
+export class PatasYPatinesComponent {
+
 
   constructor(private router: Router) {}
 
