@@ -2,9 +2,10 @@ import { Routes } from '@angular/router';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { ProductosComponent } from './components/productos/productos.component';
 import { ContactosComponent } from './components/contactos/contactos.component';
-import { BisagrasComponent } from './Component/bisagras/bisagras.component';
-import { TiradoresYperillasComponent } from './Component/tiradores-yperillas/tiradores-yperillas.component';
-import { CorrederasComponent } from './Component/correderas/correderas.component';
+import { BisagraComponent } from './components/bisagra/bisagra.component';
+import { LavaplatosComponent } from './components/lavaplatos/lavaplatos.component';
+import { CorrederasComponent } from './components/correderas/correderas.component';
+
 
 export const routes: Routes = [
     {
@@ -31,22 +32,19 @@ export const routes: Routes = [
         title: 'Contactos',
         component: ContactosComponent
     },
-
     {
-        path:'Bisagras',
-        title:'Bisagras',
-        component: BisagrasComponent
+        path: 'Bisagra',
+        title: 'Bisagras',
+        component: BisagraComponent
     },
-
     {
-        path:'Tiradores y Perillas',
-        title:'Tiradores-y-perillas',
-        component: TiradoresYperillasComponent
+        path: 'Lavaplatos',
+        title: 'Lavaplatos',
+        component: LavaplatosComponent
     },
-
     {
-        path:'Correderas',
-        title:'Correderas',
-        component: CorrederasComponent
+        path: 'Correderas',
+        title: 'Correderas',
+        component: CorrederasComponent,
     }
 ];
