@@ -1,49 +1,57 @@
 <!-- Navbar -->
 <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Marcelo Quincalleria</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Marcelo Quincalleria</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExample01">
-        <ul class="navbar-nav me-auto mb-2">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/Productos">Productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/Contactos">Contactos</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form role="search">
-          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-        </form>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarsExample01">
+      <ul class="navbar-nav me-auto mb-2">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Productos">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Ferreteria">Ferretería</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Contactos">Barnices</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Madera">Madera</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Contactos">Cubierta para muebles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Contactos">Contactos</a>
+        </li>
+      </ul>
+      <form role="search">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+      </form>
     </div>
-  </nav>
+  </div>
+</nav>
 
 
-  <!-- PlaceHolder -->
+<!-- Título de la página -->
 
-<div class="Título text-center">
-    <h1>Nuestros productos</h1>
+<div id="Titulo" class="container mt-5">
+  <div class="text-center">
+      <h1>
+          Tapacantos
+        </h1>
+    </div>
 </div>
   
 
 <!-- Combobox -->
 
-<div class="container">
+<div class="container mt-5">
 
   <select class="form-select form-select-lg mb-3" aria-label="Large select example" (change)="cambioCategoria($event)">
     <option selected>Categoría</option>
@@ -60,169 +68,171 @@
     
   </select>
   
-<!-- Album -->
+<!-- imagenes -->
 
+<div class="container mt-5">
 
-<div class="album py-5 bg-body-tertiary">
-    <div class="container">
-
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-            <img src="assets/img/Cinta.png" height="277"  alt="">
-            <div class="card-body">
-              <p class="card-text">Tapacanto Alto Brillo Blanco 21mm.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary">Rollo 100 mt</small>
-              </div>
-            </div>
+  <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Ferretería</strong>
+            <h3 class="mb-0">Tapacanto Alto brillo blanco</h3>
+            <div class="mb-1 text-body-secondary">21mm Rollo 100 MT</div>
+            <!-- <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              <!-- Continue reading -->
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="assets/img/Cinta.png" height="150px" width="150px" alt="">
           </div>
         </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-            <img src="assets/img/TAPAC-ALT-BRILLO-ROJO.webp" widht="250px" height="277px" alt="">
-            <div class="card-body">
-              <p class="card-text">Tapacanto Alto Brillo Rojo 21mm.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                 <!--  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary">Rollo 100 Mt</small>
-              </div>
-            </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Ferretería</strong>
+            <h3 class="mb-0">Tapacanto 21mm Rollo 100MT</h3>
+            <div class="mb-1 text-body-secondary">Alto brillo rojo</div>
+           <!--  <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              <!-- Continue reading -->
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
           </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-           <!--  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-           <img src="assets/img/TAPAC-AMARILLO.jpg" width="100%" height="375" alt="">
-            <div class="card-body">
-              <p class="card-text">Tapacanto Encolado Amarillo 18mm.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary">Rollo 100 mt</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-           <!--  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-           <img src="assets/img/TAPAC-AZUL.jpg" alt="">
-            <div class="card-body">
-              <p class="card-text">Tapacanto Encolado Azul 18MM.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary">Rollo 100 MT</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-           <!--  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-           <img src="assets/img/TAPAC-ENCOLADO-GRIS-HUMO.png" height="275px" width="360px" alt="">
-            <div class="card-body">
-              <p class="card-text">Tapacanto Encolado Gris humo 18 mm.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary">Rollo 100 mt</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-            <img src="assets/img/TAPAC-ENCOLADO-NOGAL-CENIZA.jpg" height="277px" alt="">
-            <div class="card-body">
-              <p class="card-text">Tapacanto Encolado Nogal Ceniza 32 mm.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary">Rollo 100 Mt</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-           <!--  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-           <img src="assets/img/TAPAC-ENCOLADO-PERAL.png" height="277px" alt="">
-            <div class="card-body">
-              <p class="card-text">Tapacanto Encolado Peral 32 mm.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary">Rollo 100 Mt</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-          <!--   <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-          <img src="assets/img/TAPAC-ENCOLADO-ROSADO.jpg" height="277px" alt="">
-            <div class="card-body">
-              <p class="card-text">Tapacanto Encolado Rosado 18mm.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-               <!--    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary">Rollo 100 Mt</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-           <!--  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-           <img src="assets/img/TAPACANTO-ENCOLADO-CEDRO.jpg" height="277px" alt="">
-            <div class="card-body">
-              <p class="card-text">Tapacanto Encolado Cedro 32mm.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary">Rollo 100 Mt</small>
-              </div>
-            </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="/assets/img/TAPAC-ALT-BRILLO-ROJO.webp" height="150px" width="150px" alt="">
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <nav class="blog-pagination text-center" aria-label="Pagination">
-    <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
-    <a class="btn btn-outline-secondary rounded-pill disabled" aria-disabled="true">Newer</a>
-</nav>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Ferretería</strong>
+            <h3 class="mb-0">Tapacanto 18mm</h3>
+            <div class="mb-1 text-body-secondary">encolado amarillo</div>
+          <!-- <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+             <!--  Continue reading -->
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="assets/img/TAPAC-AMARILLO.jpg" height="150px" width="150px" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Ferretería</strong>
+            <h3 class="mb-0">Tapacando 18mm</h3>
+            <div class="mb-1 text-body-secondary">encolado azul</div>
+          <!--<p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              <!-- Continue reading -->
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="assets/img/TAPAC-AZUL.jpg" height="150px" width="150px" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Ferretería</strong>
+            <h3 class="mb-0">Tapacanto 18mm</h3>
+            <div class="mb-1 text-body-secondary">encolago gris humo</div>
+          <!--<p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              <!-- Continue reading -->
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="assets/img/TAPAC-ENCOLADO-GRIS-HUMO.png" height="150px" width="150px" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Ferretería</strong>
+            <h3 class="mb-0">Tapacanto 32mm</h3>
+            <div class="mb-1 text-body-secondary">encolado nogal ceniza</div>
+            <!-- <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              <!-- Continue reading -->
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="assets/img/TAPAC-ENCOLADO-NOGAL-CENIZA.jpg" height="150px" width="150px" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Ferretería</strong>
+              <h3 class="mb-0">Tapacanto 32mm</h3>
+              <div class="mb-1 text-body-secondary">encolado peral</div>
+              <!--<p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+              <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+               <!--  Continue reading -->
+                <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="assets/img/TAPAC-ENCOLADO-PERAL.png" height="150px" width="150px" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Ferretería</strong>
+              <h3 class="mb-0">Tapacanto 18mm</h3>
+              <div class="mb-1 text-body-secondary">encolado rosado</div>
+              <!--<p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+              <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+               <!--  Continue reading -->
+                <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="assets/img/TAPAC-ENCOLADO-ROSADO.jpg" height="150px" width="150px" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Ferretería</strong>
+              <h3 class="mb-0">Tapacanto 32mm</h3>
+              <div class="mb-1 text-body-secondary">encolado cedro</div>
+              <!--<p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+              <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+               <!--  Continue reading -->
+                <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="assets/img/TAPACANTO-ENCOLADO-CEDRO.jpg" height="150px" width="150px" alt="">
+            </div>
+          </div>
+        </div>
+    </div>
+  
 </div>
-
 
 
 

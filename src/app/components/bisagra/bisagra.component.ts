@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { Router} from '@angular/router';
+import { Router, RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-bisagra',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './bisagra.component.html',
   styleUrl: './bisagra.component.css'
 })

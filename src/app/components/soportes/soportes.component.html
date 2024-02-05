@@ -1,62 +1,70 @@
 <!-- Navbar -->
 <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Marcelo Quincalleria</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Marcelo Quincalleria</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExample01">
-        <ul class="navbar-nav me-auto mb-2">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/Productos">Productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/Contactos">Contactos</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form role="search">
-          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-        </form>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarsExample01">
+      <ul class="navbar-nav me-auto mb-2">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Productos">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Ferreteria">Ferretería</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Contactos">Barnices</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Madera">Madera</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Contactos">Cubierta para muebles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Contactos">Contactos</a>
+        </li>
+      </ul>
+      <form role="search">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+      </form>
     </div>
-  </nav>
+  </div>
+</nav>
 
 
-  <!-- PlaceHolder -->
+  <!-- Título -->
 
-<div class="Título text-center">
-    <h1>Nuestros productos</h1>
+
+<div id="Titulo" class="container mt-5">
+  <div class="text-center">
+      <h1>
+          Soportes
+        </h1>
+    </div>
 </div>
-  
 
 <!-- Combobox -->
 
-<div class="container">
+<div class="container mt-5">
 
-  <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+  <select class="form-select form-select-lg mb-3" aria-label="Large select example" (change)="cambioCategoria($event)">
     <option selected>Categoría</option>
-    <option routerLink="/Productos" value="1">Tapacantos</option>
-    <option routerLink="/Bisagras" value="2">Bisagras</option>
+    <option value="1">Tapacantos</option>
+    <option value="2" >Bisagras</option>
     <option value="3">Tiradores y perillas</option>
-    <option value="1">Correderas</option>
-    <option value="2">Rieles</option>
-    <option value="3">Lavaplatos</option>
-    <option value="3">Fijación</option>
-    <option value="2">Pernos</option>
-    <option value="3">Soportes</option>
-    <option value="3">Patas y Patines</option>
+    <option value="4">Correderas</option>
+    <option value="5">Rieles</option>
+    <option value="6">Lavaplatos</option>
+    <option value="7">Fijación</option>
+    <option value="8">Pernos</option>
+    <option value="9">Soportes</option>
+    <option value="10">Patas y Patines</option>
     
   </select>
   
@@ -69,165 +77,209 @@
 
 </div> -->
 
-<!-- Album -->
+<!-- imagenes -->
 
+<div class="container mt-5">
 
-<div class="album py-5 bg-body-tertiary">
-    <div class="container">
-
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-            <img src="assets/img/barra-ovalada.jpeg" width="100%" height="375" alt="">
-            <div class="card-body">
-              <p class="card-text">BARRA OVALADA.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary">3MT</small>
-              </div>
-            </div>
+  <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Soportes</strong>
+            <h3 class="mb-0">Barra ovalada</h3>
+            <div class="mb-1 text-body-secondary">3MT</div>
+            <!-- <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              <!-- Continue reading -->
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="assets/img/barra-ovalada.jpeg" height="150px" width="150px" alt="">
           </div>
         </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-            <img src="assets/img/Barra-redonda.png" width="100%" height="375" alt="">
-            <div class="card-body">
-              <p class="card-text">Barra redonda.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                 <!--  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary">3 MT</small>
-              </div>
-            </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Soportes</strong>
+            <h3 class="mb-0">Barra redonda</h3>
+            <div class="mb-1 text-body-secondary">3MT</div>
+           <!--  <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              <!-- Continue reading -->
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
           </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-           <!--  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-           <img src="assets/img/Bombin.png" width="100%" height="375" alt="">
-            <div class="card-body">
-              <p class="card-text">Bombin.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary">60 NT SOPORTE PUERTA</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-           <!--  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-           <img src="assets/img/Escuadra.webp" width="100%" height="375" alt="">
-            <div class="card-body">
-              <p class="card-text">Escuadra Plástica.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary">Ducasse</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-           <!--  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-           <img src="assets/img/Soporte-barra.png" width="100%" height="375" alt="">
-            <div class="card-body">
-              <p class="card-text">Soporte de barra ovalado</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary"></small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-            <img src="assets/img/Soporte-redondo.png" width="100%" height="375" alt="">
-            <div class="card-body">
-              <p class="card-text">Soporte de barra redondo.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary">Unidad</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-           <!--  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-           <img src="assets/img/SOPORTE-DE-REPISA.jpg" width="100%" height="375" alt="">
-            <div class="card-body">
-              <p class="card-text">SOPORTE DE REPISA BOLSA.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary">C/CLAVO 500UND</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-          <!--   <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-          <img src="assets/img/soporte-vidrio.jpg" width="100%" height="375" alt="">
-            <div class="card-body">
-              <p class="card-text">Soporte Vidrio.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-               <!--    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary">500 unid</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-           <!--  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-           <img src="assets/img/SOPORTE-JOTA.jpg" width="100%" height="375" alt="">
-            <div class="card-body">
-              <p class="card-text">SOPORTES JOTA BLANCO PLASTICOS.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary"></small>
-              </div>
-            </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="/assets/img/Barra-redonda.png" height="150px" width="150px" alt="">
           </div>
         </div>
       </div>
     </div>
-  </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Soportes</strong>
+            <h3 class="mb-0">Bombin 60 nt</h3>
+            <div class="mb-1 text-body-secondary">Soporte puerta </div>
+          <!-- <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+             <!--  Continue reading -->
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="assets/img/Bombin.png" height="150px" width="150px" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Soportes</strong>
+            <h3 class="mb-0">Escuadra plástica</h3>
+            <div class="mb-1 text-body-secondary"></div>
+          <!--<p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              <!-- Continue reading -->
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="assets/img/Escuadra.webp" height="150px" width="150px" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Soportes</strong>
+            <h3 class="mb-0">Soporte de barra ovalado</h3>
+            <div class="mb-1 text-body-secondary"></div>
+          <!--<p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              <!-- Continue reading -->
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="assets/img/Soporte-barra.png" height="150px" width="150px" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Soportes</strong>
+            <h3 class="mb-0">Soporte de barra redondo</h3>
+            <div class="mb-1 text-body-secondary">Unidad</div>
+            <!-- <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              <!-- Continue reading -->
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="assets/img/Soporte-redondo.png" height="150px" width="150px" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Soportes</strong>
+              <h3 class="mb-0">Soporte de repisa Bolsa</h3>
+              <div class="mb-1 text-body-secondary">c/clavo 500 UND</div>
+              <!--<p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+              <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+               <!--  Continue reading -->
+                <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="assets/img/SOPORTE-DE-REPISA.jpg" height="150px" width="150px" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Soportes</strong>
+              <h3 class="mb-0">Soporte de vidrio</h3>
+              <div class="mb-1 text-body-secondary">500 UND</div>
+              <!--<p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+              <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+               <!--  Continue reading -->
+                <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="assets/img/soporte-vidrio.jpg" height="150px" width="150px" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Soportes</strong>
+              <h3 class="mb-0">Soportes jota blancos</h3>
+              <div class="mb-1 text-body-secondary">Plásticos</div>
+              <!--<p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+              <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+               <!--  Continue reading -->
+                <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="assets/img/SOPORTE-JOTA.jpg" height="150px" width="150px" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Soportes</strong>
+              <h3 class="mb-0">Soportes jota café</h3>
+              <div class="mb-1 text-body-secondary">Plásticos Bolsa 100UND</div>
+              <!--<p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+              <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+               <!--  Continue reading -->
+                <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="assets/img/soporte-jota-cafe.jpg" height="150px" width="150px" alt="">
+            </div>
+          </div>
+        </div>
+    </div>
+  
+</div>
 
-  <nav class="blog-pagination text-center" aria-label="Pagination">
-    <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
-    <a class="btn btn-outline-secondary rounded-pill disabled" aria-disabled="true">Newer</a>
-</nav>
+
+  <!-- footer -->
+  
+
+  <div class="b-example-divider"></div>
+
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-body-secondary ms-2">Nombre de la Tienda</span> <!-- Agregué un margen a la izquierda (ms-2) -->
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex flex-column"> <!-- Clase flex-column para los elementos de la lista -->
+      <li class="mb-2"><a class="text-body-secondary" href="#">Contáctanos en Whatsapp<i class="bi bi-whatsapp ms-2"></i></a></li> <!-- Agregué un margen a la izquierda (ms-2) -->
+      <li class="mb-2"><a class="text-body-secondary" href="#">Envíanos un correo<i class="bi bi-envelope-at-fill ms-2"></i></a></li> <!-- Agregué un margen a la izquierda (ms-2) -->
+      <li class="mb-2"><a class="text-body-secondary" href="#">Encuéntranos en<i class="bi bi-geo-alt ms-2"></i></a></li> <!-- Agregué un margen a la izquierda (ms-2) -->
+      <!-- <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li> -->
+    </ul>
+  </footer>
 </div>

@@ -5,6 +5,10 @@ footer {
     text-align: center; 
   }
 
-Título {
-    background-color: #778899;
-}
+  #Titulo {
+
+    background-color:#778899;
+    color: #ffffff; 
+    padding: 10px; 
+
+  }

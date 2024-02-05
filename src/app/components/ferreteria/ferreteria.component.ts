@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-contactos',
+  selector: 'app-ferreteria',
   standalone: true,
   imports: [RouterLink],
-  templateUrl: './contactos.component.html',
-  styleUrl: './contactos.component.css'
+  templateUrl: './ferreteria.component.html',
+  styleUrl: './ferreteria.component.css'
 })
-export class ContactosComponent {
+export class FerreteriaComponent {
 
 }

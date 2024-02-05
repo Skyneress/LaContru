@@ -2,12 +2,14 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-contactos',
+  selector: 'app-madera',
   standalone: true,
   imports: [RouterLink],
-  templateUrl: './contactos.component.html',
-  styleUrl: './contactos.component.css'
+  templateUrl: './madera.component.html',
+  styleUrl: './madera.component.css'
 })
-export class ContactosComponent {
+export class MaderaComponent {
+
+  
 
 }

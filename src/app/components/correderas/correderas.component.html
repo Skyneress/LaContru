@@ -1,49 +1,57 @@
 
 <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Marcelo Quincalleria</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Marcelo Quincalleria</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExample01">
-        <ul class="navbar-nav me-auto mb-2">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/Productos">Productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/Contactos">Contactos</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form role="search">
-          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-        </form>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarsExample01">
+      <ul class="navbar-nav me-auto mb-2">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Productos">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Ferreteria">Ferretería</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Contactos">Barnices</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Madera">Madera</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Contactos">Cubierta para muebles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Contactos">Contactos</a>
+        </li>
+      </ul>
+      <form role="search">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+      </form>
     </div>
-  </nav>
+  </div>
+</nav>
 
 
-  <!-- PlaceHolder -->
+ <!-- Título de la página -->
 
-<div class="Título text-center">
-    <h1>Nuestros productos</h1>
+ <div id="Titulo" class="container mt-5">
+  <div class="text-center">
+      <h1>
+          Correderas
+        </h1>
+    </div>
 </div>
   
 
 <!-- Combobox -->
 
-<div class="container">
+<div class="container mt-5">
 
   <select class="form-select form-select-lg mb-3" aria-label="Large select example" (change)="cambioCategoria($event)">
     <option selected>Categoría</option>
@@ -69,168 +77,172 @@
 
 </div> -->
 
-<!-- Album -->
+<!-- imagenes -->
 
+<div class="container mt-5">
 
-<div class="album py-5 bg-body-tertiary">
-    <div class="container">
-
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-            <img src="assets/img/corredera-doble.jpeg" height="277"  alt="">
-            <div class="card-body">
-              <p class="card-text">Carro corredera ÁreaD7-D14.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary">Doble Ducasse</small>
-              </div>
-            </div>
+  <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Correderas</strong>
+            <h3 class="mb-0">Carro corredera doble </h3>
+            <div class="mb-1 text-body-secondary">Área D7-D14 Ducasse</div>
+            <!-- <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              <!-- Continue reading -->
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="assets/img/corredera-doble.jpeg" height="150px" width="150px" alt="">
           </div>
         </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-            <img src="assets/img/Carros-corredera.jpeg" widht="250px" height="277px" alt="">
-            <div class="card-body">
-              <p class="card-text">Carro corredera D7-D14.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                 <!--  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary">Simple Ducasse</small>
-              </div>
-            </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Correderas</strong>
+            <h3 class="mb-0">Carro corredera Simple</h3>
+            <div class="mb-1 text-body-secondary">Área D7-D14 Ducasse</div>
+           <!--  <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              <!-- Continue reading -->
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
           </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-           <!--  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-           <img src="assets/img/Corredera telescópica.webp" width="350px" height="277px" alt="">
-            <div class="card-body">
-              <p class="card-text">Corredera H35 telescópica </p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary">350mm</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-           <!--  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-           <img src="assets/img/corredera-oculta-cierre-suave-ducasse.jpeg" alt="">
-            <div class="card-body">
-              <p class="card-text">Corredera oculta cierre suave.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary">40mm</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-           <!--  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-           <img src="assets/img/corredera-push.jpeg" height="320px" width="360px" alt="">
-            <div class="card-body">
-              <p class="card-text">Corredera Telescópica Push</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary">450 Ducasse</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-            <img src="assets/img/ESPECIERO.jpeg" height="320px" alt="">
-            <div class="card-body">
-              <p class="card-text">Especiero.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary"></small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-           <!--  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-           <img src="assets/img/CORREDERA-SBP.jpg" height="277px" alt="">
-            <div class="card-body">
-              <p class="card-text">Corredera SBP 30 </p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary">30 Blanca</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-          <!--   <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-          <img src="assets/img/corredera.jpg" height="277px" alt="">
-            <div class="card-body">
-              <p class="card-text">Corredera H45 Telescópica.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-               <!--    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary">450mm</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-           <!--  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-           <img src="assets/img/CORREDERA-TELES-CIERRE-SUAVE.jpg" height="277px" alt="">
-            <div class="card-body">
-              <p class="card-text">Corredera Telescópica cierre suave</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary">500mm</small>
-              </div>
-            </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="/assets/img/Carros-corredera.jpeg" height="150px" width="150px" alt="">
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <nav class="blog-pagination text-center" aria-label="Pagination">
-    <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
-    <a class="btn btn-outline-secondary rounded-pill disabled" aria-disabled="true">Newer</a>
-</nav>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Correderas</strong>
+            <h3 class="mb-0">Corredera 350 mm</h3>
+            <div class="mb-1 text-body-secondary">H35 Teléscopica</div>
+          <!-- <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+             <!--  Continue reading -->
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="assets/img/Corredera telescópica.webp" height="150px" width="150px" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Correderas</strong>
+            <h3 class="mb-0">Corredera 40 mm</h3>
+            <div class="mb-1 text-body-secondary">oculta cierre suave Ducasse</div>
+          <!--<p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              <!-- Continue reading -->
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="assets/img/corredera-oculta-cierre-suave-ducasse.jpeg" height="150px" width="150px" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Correderas</strong>
+            <h3 class="mb-0">Corredera 450</h3>
+            <div class="mb-1 text-body-secondary">teléscopica Push Ducasse</div>
+          <!--<p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              <!-- Continue reading -->
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="assets/img/corredera-push.jpeg" height="150px" width="150px" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Correderas</strong>
+            <h3 class="mb-0">Especiero</h3>
+            <div class="mb-1 text-body-secondary"></div>
+            <!-- <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              <!-- Continue reading -->
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="assets/img/ESPECIERO.jpeg" height="150px" width="150px" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Correderas</strong>
+              <h3 class="mb-0">Corredera SBP 30</h3>
+              <div class="mb-1 text-body-secondary">30 Blanca</div>
+              <!--<p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+              <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+               <!--  Continue reading -->
+                <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="assets/img/CORREDERA-SBP.jpg" height="150px" width="150px" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Correderas</strong>
+              <h3 class="mb-0">Corredera 450 mm</h3>
+              <div class="mb-1 text-body-secondary">H45 teléscopica</div>
+              <!--<p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+              <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+               <!--  Continue reading -->
+                <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="assets/img/corredera.jpg" height="150px" width="150px" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Correderas</strong>
+              <h3 class="mb-0">Corredera 500 mm</h3>
+              <div class="mb-1 text-body-secondary">teléscopica cierre suave</div>
+              <!--<p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+              <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+               <!--  Continue reading -->
+                <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="assets/img/CORREDERA-TELES-CIERRE-SUAVE.jpg" height="150px" width="150px" alt="">
+            </div>
+          </div>
+        </div>
+    </div>
+  
 </div>
+
 
 
 

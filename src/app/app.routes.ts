@@ -11,6 +11,8 @@ import { FijacionComponent } from './components/fijacion/fijacion.component';
 import { PernosComponent } from './components/pernos/pernos.component';
 import { SoportesComponent } from './components/soportes/soportes.component';
 import { PatasYPatinesComponent } from './components/patas-y-patines/patas-y-patines.component';
+import { FerreteriaComponent } from './components/ferreteria/ferreteria.component';
+import { MaderaComponent } from './components/madera/madera.component';
 
 
 
@@ -93,6 +95,18 @@ export const routes: Routes = [
         title:'Patas y patines',
         component: PatasYPatinesComponent
 
+    },
+
+    {
+        path:'Ferreteria',
+        title:'Ferreteria',
+        component: FerreteriaComponent
+    },
+
+    {
+        path:'Madera',
+        title:'Madera',
+        component: MaderaComponent
     }
 
 

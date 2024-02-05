@@ -1,64 +1,72 @@
 <!-- Navbar -->
 <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Marcelo Quincalleria</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Marcelo Quincalleria</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExample01">
-        <ul class="navbar-nav me-auto mb-2">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/Productos">Productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/Contactos">Contactos</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form role="search">
-          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-        </form>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarsExample01">
+      <ul class="navbar-nav me-auto mb-2">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Productos">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Ferreteria">Ferretería</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Contactos">Barnices</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="//Madera">Madera</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Contactos">Cubierta para muebles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Contactos">Contactos</a>
+        </li>
+      </ul>
+      <form role="search">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+      </form>
     </div>
-  </nav>
+  </div>
+</nav>
+
+  <!-- Título -->
 
 
-  <!-- PlaceHolder -->
-
-<div class="Título text-center">
-    <h1>Nuestros productos</h1>
-</div>
+  <div id="Titulo" class="container mt-5">
+    <div class="text-center">
+        <h1>
+            Lavaplatos
+          </h1>
+      </div>
+  </div>
   
 
 <!-- Combobox -->
 
-<div class="container">
-
-  <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+<div class="container mt-5">
+  <select class="form-select form-select-lg mb-3" aria-label="Large select example" (change)="cambioCategoria($event)">
     <option selected>Categoría</option>
-    <option routerLink="/Productos" value="1">Tapacantos</option>
-    <option routerLink="/Bisagras" value="2">Bisagras</option>
+    <option value="1">Tapacantos</option>
+    <option value="2" >Bisagras</option>
     <option value="3">Tiradores y perillas</option>
-    <option value="1">Correderas</option>
-    <option value="2">Rieles</option>
-    <option value="3">Lavaplatos</option>
-    <option value="3">Fijación</option>
-    <option value="2">Pernos</option>
-    <option value="3">Soportes</option>
-    <option value="3">Patas y Patines</option>
+    <option value="4">Correderas</option>
+    <option value="5">Rieles</option>
+    <option value="6">Lavaplatos</option>
+    <option value="7">Fijación</option>
+    <option value="8">Pernos</option>
+    <option value="9">Soportes</option>
+    <option value="10">Patas y Patines</option>
     
   </select>
+</div>
   
  <!--  <select class="form-select form-select-sm" aria-label="Small select example">
     <option selected>Open this select menu</option>
@@ -69,168 +77,172 @@
 
 </div> -->
 
-<!-- Album -->
+<!-- imagenes -->
 
+<div class="container mt-5">
 
-<div class="album py-5 bg-body-tertiary">
-    <div class="container">
-
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-            <img src="assets/img/CUBIERTA-DE-ACERO-SECADOR-DOBLE.jpg" height="277"  alt="">
-            <div class="card-body">
-              <p class="card-text">Lavaplatos acero inoxidable.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary">1.80MT</small>
-              </div>
-            </div>
+  <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Lavaplatos</strong>
+            <h3 class="mb-0">Lavaplatos 1.80MT</h3>
+            <div class="mb-1 text-body-secondary">Acero inoxidable</div>
+            <!-- <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              <!-- Continue reading -->
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="assets/img/CUBIERTA-DE-ACERO-SECADOR-DOBLE.jpg" height="150px" width="150px" alt="">
           </div>
         </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-            <img src="assets/img/pozo-doble.jpeg" widht="250px" height="277px" alt="">
-            <div class="card-body">
-              <p class="card-text">Lavacopas acero inoxidable doble.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                 <!--  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary"></small>
-              </div>
-            </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Lavaplatos</strong>
+            <h3 class="mb-0">Lavacopas </h3>
+            <div class="mb-1 text-body-secondary">Acero inoxidable doble</div>
+           <!--  <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              <!-- Continue reading -->
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
           </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-           <!--  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-           <img src="assets/img/LAVACOPAS-ESCURRIDOR.png" width="350px" height="277px" alt="">
-            <div class="card-body">
-              <p class="card-text">Lavacopas Acero Inoxidable Con Escurridor.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary"></small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-           <!--  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-           <img src="assets/img/LAVACOPAS-SIMPLE.webp" alt="">
-            <div class="card-body">
-              <p class="card-text">Lavacopas Acero Inoxidable Simple.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary"></small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-           <!--  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-           <img src="assets/img/CUBIERTA-LAVAPLATOS.jpg" height="320px" width="360px" alt="">
-            <div class="card-body">
-              <p class="card-text">Lavaplatos Acero Inoxidable</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary">80cm Derecho</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-            <img src="assets/img/LAVAPLATOS-EMPOTRADOS.jpg" height="320px" alt="">
-            <div class="card-body">
-              <p class="card-text">Lavaplatos Acero Inoxidable Empotrado.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary"> 80X43CM Izquierdo</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-           <!--  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-           <img src="assets/img/LAVAPLATOS-ACERO-DOBLE.jpeg" height="277px" alt="">
-            <div class="card-body">
-              <p class="card-text">TLavaplatos Acero inoxidable </p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary">1.20MT Derecho</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-          <!--   <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-          <img src="assets/img/LAVAPLATOS-EMPOTRADOS-DOBLE-IZQUIERDO.jpg" height="277px" alt="">
-            <div class="card-body">
-              <p class="card-text">LAVAPLATOS ACERO INOXIDABLE EMPOTRADO.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-               <!--    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary">1,20X43CM IZQUIERDO</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-           <!--  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-           <img src="assets/img/LAVAPLATOS-EMPOTRADOS_der.jpg" height="277px" alt="">
-            <div class="card-body">
-              <p class="card-text">LAVAPLATOS ACERO INOXIDABLE EMPOTRADO</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-body-secondary">1,20X43CM DERECHO</small>
-              </div>
-            </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="/assets/img/pozo-doble.jpeg" height="150px" width="150px" alt="">
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <nav class="blog-pagination text-center" aria-label="Pagination">
-    <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
-    <a class="btn btn-outline-secondary rounded-pill disabled" aria-disabled="true">Newer</a>
-</nav>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Lavaplatos</strong>
+            <h3 class="mb-0">Lavacopas</h3>
+            <div class="mb-1 text-body-secondary">Acero inoxidable con escurridor</div>
+          <!-- <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+             <!--  Continue reading -->
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="assets/img/LAVACOPAS-ESCURRIDOR.png" height="150px" width="150px" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Lavaplatos</strong>
+            <h3 class="mb-0">Lavacopas simple</h3>
+            <div class="mb-1 text-body-secondary">Acero inoxidable</div>
+          <!--<p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              <!-- Continue reading -->
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="assets/img/LAVACOPAS-SIMPLE.webp" height="150px" width="150px" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Lavaplatos</strong>
+            <h3 class="mb-0">Lava platos</h3>
+            <div class="mb-1 text-body-secondary">Acero inoxidable 80cm Derecho</div>
+          <!--<p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              <!-- Continue reading -->
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="assets/img/CUBIERTA-LAVAPLATOS.jpg" height="150px" width="150px" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Lavaplatos</strong>
+            <h3 class="mb-0">Lavaplatos </h3>
+            <div class="mb-1 text-body-secondary">Acero inoxidable empotrado 80x43cm Iquierdo</div>
+            <!-- <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              <!-- Continue reading -->
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="assets/img/LAVAPLATOS-EMPOTRADOS.jpg" height="150px" width="150px" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Lavaplatos</strong>
+              <h3 class="mb-0">Lavaplatos doble</h3>
+              <div class="mb-1 text-body-secondary">Acero inoxidable 1.20MT Derecho</div>
+              <!--<p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+              <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+               <!--  Continue reading -->
+                <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="assets/img/LAVAPLATOS-ACERO-DOBLE.jpeg" height="150px" width="150px" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Lavaplatos</strong>
+              <h3 class="mb-0">Lavaplatos doble empotrado</h3>
+              <div class="mb-1 text-body-secondary">Acero inoxidable 1.20x43cm Izquierdo</div>
+              <!--<p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+              <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+               <!--  Continue reading -->
+                <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="assets/img/LAVAPLATOS-EMPOTRADOS-DOBLE-IZQUIERDO.jpg" height="150px" width="150px" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Lavaplatos</strong>
+              <h3 class="mb-0">Lavaplatos doble empotrado</h3>
+              <div class="mb-1 text-body-secondary">Acero inoxidable 1.20x43cm Derecho</div>
+              <!--<p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
+              <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+               <!--  Continue reading -->
+                <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="assets/img/LAVAPLATOS-EMPOTRADOS_der.jpg" height="150px" width="150px" alt="">
+            </div>
+          </div>
+        </div>
+    </div>
+  
 </div>
+
 
 
 
