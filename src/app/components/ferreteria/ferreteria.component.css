@@ -10,5 +10,92 @@ footer {
     background-color:#778899;
     color: #ffffff; 
     padding: 10px; 
+    h1:hover {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
+    }
+
+  }
+
+  #img1 {
+
+    transition: transform 0.3s ease-in-out;
+
+  }
+
+  #img1:hover {
+
+    transform: scale(1.1);
+
+  }
+
+  #img2 {
+
+    transition: transform 0.3s ease-in-out;
+
+  }
+
+  #img2:hover {
+
+    transform: scale(1.1);
+
+  }
+
+  #img3 {
+
+    transition: transform 0.3s ease-in-out;
+
+  }
+
+  #img3:hover {
+
+    transform: scale(1.1);
+
+  }
+
+  #img4 {
+
+    transition: transform 0.3s ease-in-out;
+
+  }
+
+  #img4:hover {
+
+    transform: scale(1.1);
+
+  }
+
+  #img5 {
+
+    transition: transform 0.3s ease-in-out;
+
+  }
+
+  #img5:hover {
+
+    transform: scale(1.1);
+
+  }
+
+  #img6 {
+
+    transition: transform 0.3s ease-in-out;
+
+  }
+
+  #img6:hover {
+
+    transform: scale(1.1);
+
+  }
+
+  #img7 {
+
+    transition: transform 0.3s ease-in-out;
+
+  }
+
+  #img7:hover {
+
+    transform: scale(1.1);
 
   }

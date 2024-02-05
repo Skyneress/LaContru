@@ -13,6 +13,8 @@ import { SoportesComponent } from './components/soportes/soportes.component';
 import { PatasYPatinesComponent } from './components/patas-y-patines/patas-y-patines.component';
 import { FerreteriaComponent } from './components/ferreteria/ferreteria.component';
 import { MaderaComponent } from './components/madera/madera.component';
+import { CubiertasComponent } from './components/cubiertas/cubiertas.component';
+
 
 
 
@@ -107,8 +109,12 @@ export const routes: Routes = [
         path:'Madera',
         title:'Madera',
         component: MaderaComponent
+    },
+
+    {
+        path:'Cubiertas',
+        title:'Cubiertas',
+        component:CubiertasComponent
     }
-
-
 
 ];

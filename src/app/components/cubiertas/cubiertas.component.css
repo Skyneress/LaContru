@@ -1,11 +1,5 @@
-footer {
-    background-color: #778899; 
-    color: #ffffff; 
-    padding: 10px; 
-    text-align: center; 
-  }
-  
-  #Titulo {
+
+#Titulo {
 
     background-color:#778899;
     color: #ffffff; 
@@ -15,109 +9,128 @@ footer {
 
   }
 
-  #img1 {
+  footer {
+    background-color: #778899; 
+    color: #ffffff; 
+    padding: 10px; 
+    text-align: center; 
+  }
+
+  #card1 {
 
     transition: transform 0.3s ease-in-out;
 
   }
 
-  #img1:hover {
+  #card1:hover {
 
     transform: scale(1.1);
 
   }
 
-  #img2 {
+  #card2 {
 
     transition: transform 0.3s ease-in-out;
 
   }
 
-  #img2:hover {
+  #card2:hover {
 
     transform: scale(1.1);
 
   }
 
-  #img3 {
+  #card3 {
 
     transition: transform 0.3s ease-in-out;
 
   }
 
-  #img3:hover {
+  #card3:hover {
 
     transform: scale(1.1);
 
   }
 
-  #img4 {
+  #card4 {
 
     transition: transform 0.3s ease-in-out;
 
   }
 
-  #img4:hover {
+  #card4:hover {
 
     transform: scale(1.1);
 
   }
 
-  #img5 {
+  #card5 {
 
     transition: transform 0.3s ease-in-out;
 
   }
 
-  #img5:hover {
+  #card5:hover {
 
     transform: scale(1.1);
 
   }
 
-  #img6 {
+  #card6 {
 
     transition: transform 0.3s ease-in-out;
 
   }
 
-  #img6:hover {
+  #card6:hover {
 
     transform: scale(1.1);
 
   }
 
-  #img7 {
+  #card7 {
 
     transition: transform 0.3s ease-in-out;
 
   }
 
-  #img7:hover {
+  #card7:hover {
 
     transform: scale(1.1);
 
   }
 
-  #img8 {
+  #card8 {
 
     transition: transform 0.3s ease-in-out;
 
   }
 
-  #img8:hover {
+  #card8:hover {
 
     transform: scale(1.1);
 
   }
 
-  #img9 {
+  #card9 {
 
     transition: transform 0.3s ease-in-out;
 
   }
 
-  #img9:hover {
+  #card9:hover {
+
+    transform: scale(1.1);
+
+  }
+
+  #card10 {
+
+    transition: transform 0.3s ease-in-out;
+
+  }
+
+  #card10:hover {
 
     transform: scale(1.1);
 
