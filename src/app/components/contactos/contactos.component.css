@@ -5,9 +5,40 @@
 }
 
 footer {
-    background-color: #778899; 
-    color: #ffffff; 
+    background-color: #1A5276; /* azul oscuro */
+    color: #D5DBDB; /* gris claro */
     padding: 10px; 
     text-align: center; 
   }
+  
+  #contac1 {
+
+    transition: transform 0.3s ease-in-out;
+
+  }
+
+  #contac1:hover {
+
+    transform: scale(1.1);
+
+  }
+
+  #contac2 {
+
+    transition: transform 0.3s ease-in-out;
+
+  }
+
+  #contac2:hover {
+
+    transform: scale(1.1);
+
+  }
+
+  #minav {
+
+    background-color: #1A5276;
+
+  }
+
   

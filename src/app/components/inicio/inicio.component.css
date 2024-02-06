@@ -31,3 +31,40 @@ footer {
   width: 350px;
   height: 350px;
 }
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.image-container h2 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff; /* Color del texto */
+}
+
+.button-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover img {
+  transform: translateX(10px); /* Deslizar la imagen hacia la derecha */
+}
+
+.image-container:hover .button-container {
+  opacity: 1;
+}
+
+
