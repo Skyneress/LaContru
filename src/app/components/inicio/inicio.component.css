@@ -110,3 +110,29 @@ footer {
 
 }
 
+.featurette:hover .col-md-5 img {
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-10px); /* Mueve el elemento hacia la izquierda */
+}
+
+.featurette .col-md-7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente el contenido */
+}
+
+.featurette:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Añade una sombra al pasar el cursor */
+  transition: box-shadow 0.3s ease; /* Agrega una transición suave */
+}
+
+.P {
+
+  text-align: center;
+  background-color:#778899;
+  color: #ffffff; 
+  padding: 10px; h1:hover {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
+    }
+
+}
