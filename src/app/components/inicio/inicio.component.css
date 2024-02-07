@@ -86,3 +86,27 @@ footer {
 
 }
 
+.TyB {
+
+  text-align: center;
+  background-color:#778899;
+  color: #ffffff; 
+  padding: 10px; h1:hover {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
+    }
+
+  
+
+}
+
+.LyF {
+
+  text-align: center;
+  background-color:#778899;
+  color: #ffffff; 
+  padding: 10px; h1:hover {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
+    }
+
+}
+
