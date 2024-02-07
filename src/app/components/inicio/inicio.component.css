@@ -136,3 +136,41 @@ footer {
     }
 
 }
+
+/* Estilo para el fondo de los paneles de la acordeón */
+.accordion-item {
+  background-color: #273152;
+  border: none; /* Elimina el borde */
+  border-radius: 0.5rem; /* Agrega bordes redondeados */
+  margin-bottom: 10px; /* Espacio entre los paneles */
+}
+
+/* Estilo para el texto de los botones de la acordeón */
+.accordion-button {
+  color: white; /* Color del texto */
+}
+
+/* Estilo para el texto del cuerpo de los paneles de la acordeón */
+.accordion-body {
+  color: white; /* Color del texto */
+}
+
+/* Estilo para el icono de los botones de la acordeón */
+.accordion-button::after {
+  color: white; /* Color del icono */
+}
+
+/* Estilo para el ícono de los botones de la acordeón cuando están colapsados */
+.accordion-button.collapsed::after {
+  color: white; /* Color del icono */
+}
+
+.nombre-grifo {
+
+  text-align: center;
+  color: #ffffff; 
+  padding: 10px; h1:hover {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
+    }
+
+}
