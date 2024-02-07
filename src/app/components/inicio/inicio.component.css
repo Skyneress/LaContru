@@ -68,3 +68,21 @@ footer {
 }
 
 
+.bodycontainer {
+  background-color: #273152; /* Azul Oscuro */
+  color: white;
+  padding: 50px;
+}
+
+#portada-inicio:hover .img-fluid {
+  transition: transform 0.3s ease-in-out; 
+  transform: scale(1.1);
+  
+}
+
+#portada-inicio:not(:hover) .img-fluid {
+
+  transform: scale(1);
+
+}
+

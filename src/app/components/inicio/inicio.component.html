@@ -1,3 +1,11 @@
+<!-- Header -->
+
+<header style="background-color: #778899;" class="py-4">
+  <div id="header" class="container">
+    <h1 class="text-center">Macerlo Quincallería</h1>
+  </div>
+</header>
+
 <!-- Navbar -->
 <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
     <div class="container-fluid">
@@ -37,46 +45,64 @@
     </div>
   </nav>
 
-<!--  texto de inicio -->
+<div class="bodycontainer">
 
-<div class="container py-4">
+  <!--  texto de inicio -->
 
-  <div class="p-5 mb-4 bg-body-tertiary rounded-3">
-    <div class="container-fluid py-5">
-      <h1 class="display-5 fw-bold">Encuentra lo que buscas con nosotros</h1>
-      <p class="col-md-8 fs-4"></p>
-      <button class="btn btn-primary btn-lg" type="button" routerLink="/Contactos">Contáctanos</button>
+<div class="container">
+
+  <div class="container py-4">
+    <div id="portada-inicio" class="p-5 mb-4 bg-body-tertiary rounded-3 position-relative">
+      <img  src="assets/img/portada-inicio.jpg" class="img-fluid" alt="Descripción de la imagen" style="width: 100%; border: none;">
+      <div class="container-fluid py-5 position-absolute top-50 start-50 translate-middle text-center text-white" style="opacity: 0.5;">
+        <h1 class="display-5 fw-bold">Encuentra lo que buscas con nosotros</h1>
+        <p class="col-md-8 fs-4" style="opacity: 0.5;"></p>
+        <button class="btn btn-primary btn-lg" type="button" routerLink="/Contactos" style="opacity: 0.5;">Contáctanos</button>
+      </div>
     </div>
   </div>
-
 <!-- cards mostrando algunos productos importantes -->
 
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="row mb-3">
+        <div class="col-lg-12 mx-auto">
+          <div class="image-container text-start">
+            <img src="assets/img/portada-correderas.jpg" class="img-fluid" alt="">
+            <h2 class="fw-normal" style="font-size: 20px;">Correderas</h2>
+            <div class="button-container">
+              <a class="btn btn-secondary" href="#">Ver aquí</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<div class="row mt-5">
-  <div class="col-lg-4 mx-auto">
-    <div class="image-container">
-      <img src="assets/img/lavaplatosportada.jpg" alt="">
-      <h2 class="fw-normal">Lavaplatos</h2>
-      <div class="button-container">
-        <a class="btn btn-secondary" href="#">Ver aquí</a>
+      <div class="row mt-3">
+        <div class="col-lg-12 mx-auto">
+          <div class="image-container text-start">
+            <img src="assets/img/maderaportada.jpg" class="img-fluid" alt="">
+            <h2 class="fw-normal" style="font-size: 20px;">Madera</h2>
+            <div class="button-container">
+              <a class="btn btn-secondary" href="#">Ver aquí</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="col-lg-4 mx-auto">
-    <div class="image-container">
-      <img src="assets/img/corcheteraportada.jpg" alt="">
-      <h2 class="fw-normal">Ferretería</h2>
-      <div class="button-container">
-        <a class="btn btn-secondary" href="#">Ver aquí</a>
+    
+    <div class="col-lg-6">
+      <div class="image-container text-center" style="height: 715px; display: flex; flex-direction: column; justify-content: center;">
+        <img src="assets/img/portada-productos.avif" class="img-fluid mx-auto" alt="" style="max-height: 100%; max-width: 100%;">
+        <h2 class="fw-normal" style="font-size: 24px;">Productos</h2> 
+        <div class="button-container">
+          <a class="btn btn-secondary" href="#">Ver aquí</a>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
-  
-
-</div>
-
+    
   <!-- Carousel -->
 
   <div class="container mt-5">
@@ -138,29 +164,32 @@
 
   </div>
 
+  <!-- no sé dónde se vea mejor mostrar más tarde con los chiquillos -->
 
-  <!-- segunda parte -->
-
-
-  <!-- <div class="row mt-5">
+  <div class="row mt-5">
     <div class="col-lg-4 mx-auto">
       <div class="image-container">
-        <img src="assets/img/cortandomadera2.jpg"  alt="">
-        <h2 class="fw-normal">Madera</h2>
+        <img src="assets/img/lavaplatosportada.jpg" alt="">
+        <h2 class="fw-normal">Lavaplatos</h2>
         <div class="button-container">
-          <a class="btn btn-secondary" href="#">ver aquí</a>
+          <a class="btn btn-secondary" href="#">Ver aquí</a>
         </div>
       </div>
     </div>
-  </div> -->
- 
-  
+    <div class="col-lg-4 mx-auto">
+      <div class="image-container">
+        <img src="assets/img/corcheteraportada.jpg" alt="">
+        <h2 class="fw-normal">Ferretería</h2>
+        <div class="button-container">
+          <a class="btn btn-secondary" href="#">Ver aquí</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-
-
-  <!-- Container de las imagenes -->
-
+  <!-- segunda parte -->
+  <!-- container con otras imagenes -->
   <div class="container mt-5">
 
     <div class="row featurette">
@@ -169,7 +198,6 @@
           <p class="lead">Caja de 10 rollos de 100 metros</p>
         </div>
         <div class="col-md-5">
-          <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> -->
           <img src="assets/img/Cinta.png" width="350" height="350">
         </div>
       </div>
@@ -182,7 +210,6 @@
           <p class="lead">Venta de quincallería</p>
         </div>
         <div class="col-md-5 order-md-1">
-          <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> -->
           <img src="assets/img/MelaminaBlanca.png" width="350px" height="350px" alt="">
         </div>
       </div>
@@ -195,13 +222,14 @@
           <p class="lead">Bisagras marcas Ducasse</p>
         </div>
         <div class="col-md-5">
-          <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> -->
           <img src="assets/img/Visagra.png" width="350" height="350">
         </div>
       </div>
 
 
   </div>
+
+</div>
 
 
   <!-- footer -->
