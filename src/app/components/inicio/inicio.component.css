@@ -1,45 +1,42 @@
-/* Carousel img {
-    height: 100px;
-} */
 
-.carousel-caption h1,
-.carousel-caption p,
-.carousel-caption a {
-  color: #232121; 
+/* esto da color a la pagina */
+
+:host {
+  display: block;
+  background-color: #273152;
 }
 
-footer {
-  background-color: #778899; 
-  color: #ffffff; 
-  padding: 10px; 
-  text-align: center;
-  width: 100%;
-  height: 200%;
-  margin-top: 50px;
-  bottom: 0;
-  
+/* esto mueve al centro el texto de la imagen que sale al inicio */
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-#myCarousel {
-
-  background-color: #696969;
-
+/* esto da tamaño pequeño al texto que sale con la imagen en el inicio para pantallas de celular */
+@media only screen and (max-width: 576px) {
+  .text-body-emphasis h2,
+  .btn {
+    font-size: 1rem; /* Tamaño de fuente más pequeño para pantallas de celular */
+  }
 }
 
-.carousel-inner img {
-  object-fit: cover;
-  width: 350px;
-  height: 350px;
-}
 
+
+
+/* Estilos para contenedor de imágenes */
 .image-container {
   position: relative;
   overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .image-container img {
   width: 100%;
-  height: auto;
+  height: 100%; /* Ajustar imagen al 100% de la altura del contenedor */
+  object-fit: cover; /* Ajustar imagen al tamaño del contenedor sin distorsionar */
   transition: transform 0.3s ease;
 }
 
@@ -48,8 +45,13 @@ footer {
   top: 10px;
   left: 10px;
   color: #fff; /* Color del texto */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1.2rem; /* Tamaño de fuente */
 }
 
+/* Estilos para contenedor de botones */
 .button-container {
   position: absolute;
   bottom: 10px;
@@ -59,8 +61,9 @@ footer {
   transition: opacity 0.3s ease;
 }
 
+/* Estilos para efecto hover */
 .image-container:hover img {
-  transform: translateX(10px); /* Deslizar la imagen hacia la derecha */
+  transform: scale(1.05); /* Agrandar la imagen en el hover */
 }
 
 .image-container:hover .button-container {
@@ -68,23 +71,7 @@ footer {
 }
 
 
-.bodycontainer {
-  background-color: #273152; /* Azul Oscuro */
-  color: white;
-  padding: 50px;
-}
 
-#portada-inicio:hover .img-fluid {
-  transition: transform 0.3s ease-in-out; 
-  transform: scale(1.1);
-  
-}
-
-#portada-inicio:not(:hover) .img-fluid {
-
-  transform: scale(1);
-
-}
 
 .TyB {
 
@@ -95,9 +82,32 @@ footer {
       box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
     }
 
-  
+}
+
+/* esta clase puede cambiar el tamaño de las card que estan en el carousel */
+.custom-img {
+  width: 300px; /* Elige el ancho deseado */
+  height: 300px; /* Elige la altura deseada */
+}
+
+.carousel-caption h1,
+.carousel-caption p,
+.carousel-caption a {
+  color: #232121; 
+}
+
+/* lo que sale a continuacion es el css del segundo carousel que aparece  */
+#myCarousel {
+
+  background-color: #696969;
 
 }
+
+.carousel-image {
+  max-width: 350px; /* ajusta el ancho máximo según tus necesidades */
+  height: auto; /* esto mantendrá la relación de aspecto original */
+}
+
 
 .LyF {
 
@@ -107,24 +117,10 @@ footer {
   padding: 10px; h1:hover {
       box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
     }
-
 }
 
-.featurette:hover .col-md-5 img {
-  transition: transform 0.3s ease-in-out;
-  transform: translateX(-10px); /* Mueve el elemento hacia la izquierda */
-}
 
-.featurette .col-md-7 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centra verticalmente el contenido */
-}
 
-.featurette:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Añade una sombra al pasar el cursor */
-  transition: box-shadow 0.3s ease; /* Agrega una transición suave */
-}
 
 .P {
 
@@ -137,7 +133,21 @@ footer {
 
 }
 
-/* Estilo para el fondo de los paneles de la acordeón */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Ajusta la altura según sea necesario */
+  
+}
+
+.accordion-button {
+color: black !important;
+text-align: center;
+
+}
+
+
 .accordion-item {
   background-color: #273152;
   border: none; /* Elimina el borde */
@@ -174,3 +184,46 @@ footer {
     }
 
 }
+
+/* esto mantiene del mismo tamaño el segundo carousel */
+.carousel-inner img {
+  object-fit: cover;
+  width: 350px;
+  height: 350px;
+}
+
+
+
+/* ultima parte antes del footer */
+.featurette:hover .col-md-5 img {
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-10px); /* Mueve el elemento hacia la izquierda */
+}
+
+.featurette .col-md-7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente el contenido */
+}
+
+.featurette:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Añade una sombra al pasar el cursor */
+  transition: box-shadow 0.3s ease; /* Agrega una transición suave */
+}
+
+
+
+
+footer {
+  background-color: #778899; 
+  color: #ffffff; 
+  padding: 10px; 
+  text-align: center;
+  width: 100%;
+  height: 200%;
+  margin-top: 50px;
+  bottom: 0;
+  
+}
+
+
