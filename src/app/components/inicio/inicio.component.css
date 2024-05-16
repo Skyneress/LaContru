@@ -226,4 +226,35 @@ footer {
   
 }
 
+.clima-card {
+  background-color: #778899; /* color de fondo sutil */
+  border: 1px solid #ffffff; /* borde sutil */
+  border-radius: 10px; /* bordes redondeados */
+  padding: 20px; /* espaciado interno */
+  max-width: 300px; /* ancho máximo */
+  margin: 20px auto; /* margen auto para centrar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra sutil */
+  text-align: center; /* centrar el texto */
+  color: #273152; /* color del texto */
+  transition: transform 0.3s ease-in-out; /* transición suave */
+}
 
+.clima-card:hover {
+  transform: scale(1.05); /* agranda la tarjeta un 5% */
+}
+
+.clima-card h1 {
+  font-size: 1.5em; /* tamaño de fuente para el título */
+  margin-bottom: 10px; /* margen inferior */
+}
+
+.clima-card .item-clima {
+  font-size: 1.2em; /* tamaño de fuente para los elementos del clima */
+  margin: 5px 0; /* margen vertical */
+}
+
+.clima-card .iconClima {
+  width: 50px; /* ancho de la imagen del icono */
+  height: 50px; /* altura de la imagen del icono */
+  margin-top: 10px; /* margen superior */
+}

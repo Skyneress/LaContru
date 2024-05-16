@@ -60,7 +60,13 @@
   </div>
 </div>
 
-
+<div class="clima-card" *ngIf="weatherData">
+  <h1 class="fs-2">Clima en {{ weatherData.name }}</h1>
+  <p class="item-clima">{{ weatherData.weather[0].description }}</p>
+  <p class="item-clima">{{ weatherData.main.temp }} °C</p>
+  <p class="item-clima">{{ weatherData.main.humidity }}%</p>
+  <img [src]="getWeatherIconUrl(weatherData.weather[0].icon)" class="iconClima" alt="Weather icon">
+</div>
 
 <div class="container mt-5">
   <div class="row">
